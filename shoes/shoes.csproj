@@ -67,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bd.tt</DependentUpon>
     </Compile>
+    <Compile Include="Core.cs" />
     <Compile Include="Manufacturer.cs">
       <DependentUpon>bd.tt</DependentUpon>
     </Compile>
