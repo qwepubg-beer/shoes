@@ -1,0 +1,37 @@
+﻿<Window x:Class="shoes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shoes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="TB_UserName" Grid.Column="1" TextWrapping="Wrap" Visibility="Collapsed"/>
+        <Grid Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="Exit" Content="Выход" Grid.Column="5" Visibility="Collapsed"></Button>
+            <Button Name="Back" Content="Назад" Grid.Column="0"></Button>
+            <Button Name="Product" Content="Продукты" Grid.Column="1" Visibility="Collapsed"></Button>
+            <Button Name="Order" Content="Заказы" Grid.Column="2" Visibility="Collapsed"></Button>
+            <Button Name="EditProduct" Content="Изменить продуты" Grid.Column="3" Visibility="Collapsed"></Button>
+            <Button Name="EditOrder" Content="Изменить заказы" Grid.Column="4" Visibility="Collapsed"></Button>
+        </Grid>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.ColumnSpan="2"></Frame>
+    </Grid>
+</Window>

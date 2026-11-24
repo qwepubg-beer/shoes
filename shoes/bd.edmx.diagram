@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36fee6e8a5b94a229bd7ae6963880324" Name="Diagram1">
+        <EntityTypeShape EntityType="shoesModel.Manufacturer" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.Order" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.PickupPoint" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.Product" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.ProductCategory" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.ProductOrder" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.Role" Width="1.5" PointX="1.5" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.Status" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.Supplier" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoesModel.User" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <AssociationConnector Association="shoesModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_Order_PickupPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_ProductOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_Product_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_ProductOrder_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="shoesModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
