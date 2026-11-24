@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <TextBox Name="Search" Height="40" SelectionChanged="Search_SelectionChanged"></TextBox>
+            <TextBox Name="Search" Height="40"></TextBox>
             <ComboBox x:Name="TypeProductComboBox" Grid.Column="1" IsEditable="True" DisplayMemberPath="Name" SelectedValuePath="Id" Height="40"></ComboBox>
             <ComboBox x:Name="SortComboBox" Grid.Column="2" IsEditable="True" Height="40">
                 <ComboBoxItem Content="Цена убывание"></ComboBoxItem>

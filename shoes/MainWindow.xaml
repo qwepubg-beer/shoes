@@ -26,9 +26,9 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Name="Exit" Content="Выход" Grid.Column="5" Visibility="Collapsed"></Button>
-            <Button Name="Back" Content="Назад" Grid.Column="0"></Button>
-            <Button Name="Product" Content="Продукты" Grid.Column="1" Visibility="Collapsed"></Button>
-            <Button Name="Order" Content="Заказы" Grid.Column="2" Visibility="Collapsed"></Button>
+            <Button Name="Back" Content="Назад" Grid.Column="0" Click="Back_Click"></Button>
+            <Button Name="Product" Content="Продукты" Grid.Column="1" Click="Product_Click"></Button>
+            <Button Name="Order" Content="Заказы" Grid.Column="2" Visibility="Collapsed" Click="Order_Click"></Button>
             <Button Name="EditProduct" Content="Изменить продуты" Grid.Column="3" Visibility="Collapsed"></Button>
             <Button Name="EditOrder" Content="Изменить заказы" Grid.Column="4" Visibility="Collapsed"></Button>
         </Grid>

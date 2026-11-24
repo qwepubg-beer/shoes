@@ -1,4 +1,5 @@
-﻿using System;
+﻿using shoes.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,22 @@ namespace shoes
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.NavigationService.Navigate(new AuthPage());
+        }
+
+        private void Order_Click(object sender, RoutedEventArgs e)
+        {
+            if(MainFrame.NavigationService.CanGoBack) {MainFrame.NavigationService.GoBack();}
+        }
+
+        private void Product_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new ProductPage());
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
